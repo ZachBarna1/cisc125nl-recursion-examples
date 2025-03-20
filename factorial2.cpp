@@ -12,5 +12,7 @@ int main () {
 }
 
 int fact (int n) {
-	return 1; // stub
+	if (n == 0)
+		return 1;
+	return n * fact(n - 1);
 }
